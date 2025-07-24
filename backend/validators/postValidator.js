@@ -3,10 +3,10 @@ const { body, param } = require('express-validator');
 const validatePost = [
     body('name')
         .notEmpty()
-        .withMessage('name is required'),
+        .withMessage('El nombre es requerido'),
     body('description')
         .notEmpty()
-        .withMessage('description is required'),
+        .withMessage('la descripcion es requerida'),
 ];
 
 const validatePostIdParam = [
